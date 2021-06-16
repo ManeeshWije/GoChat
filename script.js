@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io("https://maneeshs-chat-app.herokuapp.com/");
 const messageForm = document.getElementById("send-container");
 const messageInput = document.getElementById("message-input");
 const messageContainer = document.getElementById("message-container");
