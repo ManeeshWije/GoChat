@@ -8,8 +8,7 @@
   },
   "scripts": {
     "worker": "node server.js",
-    "test": "node script.js",
-    "start": "node server.js"
+    "test": "node script.js"
   },
   "repository": {
     "type": "git",
