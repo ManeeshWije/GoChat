@@ -3,12 +3,8 @@
   "version": "1.0.0",
   "description": "real-time-chat-app",
   "main": "index.js",
-  "engines": {
-    "node": "12.17.x"
-  },
   "scripts": {
-    "worker": "node server.js",
-    "test": "node script.js"
+    "devStart": "nodemon server.js"
   },
   "repository": {
     "type": "git",
