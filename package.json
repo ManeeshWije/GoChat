@@ -2,11 +2,13 @@
   "name": "real-time-chat-app",
   "version": "1.0.0",
   "description": "real-time-chat-app",
-  "main": "script.js",
+  "main": "index.js",
   "engines": {
     "node": "12.17.x"
   },
   "scripts": {
+    "worker": "node server.js",
+    "test": "node script.js",
     "start": "node server.js"
   },
   "repository": {
