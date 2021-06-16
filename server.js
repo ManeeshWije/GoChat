@@ -1,9 +1,4 @@
-const io = require("socket.io")(3000, {
-  cors: {
-    origin: "*",
-  },
-});
-
+const io = require("socket.io");
 const users = {};
 
 io.on("connection", (socket) => {
