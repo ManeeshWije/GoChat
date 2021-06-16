@@ -1,11 +1,8 @@
-const server = require("https").createServer();
-const io = require("socket.io")(server, {
+const io = require("socket.io")(3000, {
   cors: {
     origin: "*",
   },
 });
-
-server.listen(3000);
 
 const users = {};
 
