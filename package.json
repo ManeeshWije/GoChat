@@ -1,0 +1,25 @@
+{
+  "name": "real-time-chat-app",
+  "version": "1.0.0",
+  "description": "real-time-chat-app",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManeeshWije/Real-Time-Chat-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManeeshWije/Real-Time-Chat-App/issues"
+  },
+  "homepage": "https://github.com/ManeeshWije/Real-Time-Chat-App#readme",
+  "dependencies": {
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

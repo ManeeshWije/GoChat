@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+#message-container {
+  width: 50%;
+  max-width: 1200px;
+}
+#send-container {
+  bottom: 0;
+  position: fixed;
+  padding-bottom: 50px;
+  background-color: white;
+  max-width: 1200px;
+  width: 80%;
+  display: flex;
+}
+
+#send-container button {
+  background-color: green;
+  color: white;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+#message-input {
+  flex-grow: 1;
+}
+#message-container div {
+  background-color: rgb(172, 172, 172);
+  padding: 5px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: white;
+}
+
+#message-container div:nth-child(2n) {
+  background-color: rgb(0, 138, 244);
+}
