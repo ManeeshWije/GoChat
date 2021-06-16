@@ -4,6 +4,7 @@
   "description": "real-time-chat-app",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "devStart": "nodemon server.js"
   },
   "repository": {
