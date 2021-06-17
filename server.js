@@ -9,13 +9,13 @@ const io = require("socket.io")(server, {
 
 const port = process.env.PORT || 3000;
 
-app.set("views", __dirname + "/views");
-app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
+// app.set("views", __dirname + "/views");
+// app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   console.log("yea");
   res.redirect("/views/index.html");
+  app.use(express.static(__dirname + "/public"));
 });
 
 server.listen(port, () => {
