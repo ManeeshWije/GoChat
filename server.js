@@ -9,11 +9,11 @@ const io = require("socket.io")(server, {
 
 const port = process.env.PORT || 3000;
 
-app.set("views", "./views/index.html");
+app.set("views", "/views");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
-app.get("./views/index.html", (req, res) => {
+app.get("/views", (req, res) => {
   console.log("yea");
 });
 
