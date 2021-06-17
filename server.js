@@ -13,8 +13,10 @@ app.set("views", "./views");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
+const rooms = {};
+
 app.get("/", (req, res) => {
-  res.render("index", "/views");
+  res.render("index", { rooms: rooms });
 });
 
 server.listen(port, () => {
