@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const path = require("path");
 const server = require("http").Server(app);
 const io = require("socket.io")(server, {
   cors: {
@@ -10,18 +9,12 @@ const io = require("socket.io")(server, {
 
 const port = process.env.PORT || 3000;
 
-// app.set("views", __dirname + "/views");
-// app.use(express.urlencoded({ extended: true }));
+server.listen(port);
 
-// res.redirect("/views/index.html");
-// app.use(express.static(__dirname + "/public"));
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/index.html"));
-});
-
-server.listen(port, () => {
-  console.log(`listening on port ${port}`);
+  res.sendFile(__dirname + "/index.html");
 });
 
 const users = {};
