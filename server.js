@@ -9,15 +9,12 @@ const io = require("socket.io")(server, {
 
 const port = process.env.PORT || 3000;
 
-app.set("views", "./views/index.ejs");
-app.set("view engine", "ejs");
+app.set("views", "./views/index.html");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
-const rooms = {};
-
 app.get("/", (req, res) => {
-  res.render("index", { rooms: rooms });
+  console.log("yea");
 });
 
 server.listen(port, () => {
