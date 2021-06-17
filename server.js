@@ -15,8 +15,9 @@ const port = process.env.PORT || 3000;
 // res.redirect("/views/index.html");
 // app.use(express.static(__dirname + "/public"));
 
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   console.log("yea");
+  res.render("index");
 });
 
 server.listen(port, () => {
