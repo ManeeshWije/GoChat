@@ -8,7 +8,6 @@ const io = require("socket.io")(server, {
 });
 
 app.set("views", "./views");
-app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
