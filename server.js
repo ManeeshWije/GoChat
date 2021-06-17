@@ -13,7 +13,7 @@ app.set("views", "./views/index.html");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
+app.get("./views/index.html", (req, res) => {
   console.log("yea");
 });
 
