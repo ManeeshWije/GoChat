@@ -12,10 +12,11 @@ const port = process.env.PORT || 3000;
 // app.set("views", __dirname + "/views");
 // app.use(express.urlencoded({ extended: true }));
 
-app.get("/views/index.html", (req, res) => {
+// res.redirect("/views/index.html");
+// app.use(express.static(__dirname + "/public"));
+
+app.get("*", (req, res) => {
   console.log("yea");
-  res.redirect("/views/index.html");
-  app.use(express.static(__dirname + "/public"));
 });
 
 server.listen(port, () => {
