@@ -2,7 +2,7 @@
   "name": "real-time-chat-app",
   "version": "1.0.0",
   "description": "real-time-chat-app",
-  "main": "/script.js",
+  "main": "/public/script.js",
   "scripts": {
     "start": "node server.js",
     "devStart": "nodemon server.js"
