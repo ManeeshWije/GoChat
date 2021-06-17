@@ -14,7 +14,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.render("index", "/views/index.html");
+  res.render("index", "/views");
 });
 
 server.listen(port, () => {
