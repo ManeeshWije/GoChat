@@ -15,6 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   console.log("yea");
+  res.redirect("/views/index.html");
 });
 
 server.listen(port, () => {
