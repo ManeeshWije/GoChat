@@ -20,6 +20,11 @@ const port = process.env.PORT || 3000;
 //   res.render("index");
 // });
 
+app.render("index", { title: "index" }, function (err, html) {
+  console.log(html);
+  res.send(html);
+});
+
 server.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
