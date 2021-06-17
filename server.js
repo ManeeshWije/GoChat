@@ -9,7 +9,7 @@ const io = require("socket.io")(server, {
 
 const port = process.env.PORT || 3000;
 
-app.set("views", "./views");
+app.set("views", "./views/index.ejs");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
